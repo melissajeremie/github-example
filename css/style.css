@@ -4,15 +4,21 @@ h1 {
 
 #parent {
     border: solid 2px blue;
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
-    width: 99%;
-    height: 100vh;
 }
 
 .child {
-    background-color: black;
+    background-color: rgb(98, 155, 32);
     margin: 3px;
     width: 300px;
     height: 300px;
+}
+
+.window {
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+    margin-top: 35%;
+    background-color: white;
 }
