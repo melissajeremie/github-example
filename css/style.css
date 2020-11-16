@@ -2,14 +2,22 @@ h1 {
     color: blueviolet;
 }
 
+/* p {
+    font-size: 14px;
+    color: darkmagenta;
+    font-family: monospace;
+    font-weight: bold;
+} */
+
 #parent {
-    border: solid 2px blue;
+    border: solid 5px blue;
     display: inline-flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
 }
 
 .child {
-    background-color: rgb(98, 155, 32);
+    background-color: rgb(233, 127, 224);
     margin: 3px;
     width: 300px;
     height: 300px;
@@ -21,4 +29,53 @@ h1 {
     margin: 0 auto;
     margin-top: 35%;
     background-color: white;
+}
+
+.biggie {
+    width: 75vw;
+    height: 50vh;
+    border: darkmagenta dotted 3px;
+
+}
+
+.smalls {
+    width: 75%;
+    height: 75%;
+    background-color: darksalmon;
+}
+.nav {
+    height: 40px;
+    width: 35%;
+    background-color: pink;
+    color: navy;
+    font-family: monospace;
+    font-size: 18px;
+    animation: moveNav 3s 1s;
+}
+
+.navitems {
+    display: flex;
+    
+}
+.navitems p {
+    margin: 10px;
+    /* animation: moveNav 3s 1s; */
+}
+
+@keyframes moveNav {
+    0% {
+        width: 35%;
+        left: 0px;
+        
+    }
+  
+    50% {
+        width: 100%;
+        left: 0px;
+    }
+    100% {
+        width: 35%;
+        left: 100px;
+
+    }
 }
